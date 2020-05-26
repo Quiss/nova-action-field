@@ -5,7 +5,7 @@
         :resource="resource"
         :resource-name="resourceName"
         :actions="field.actions"
-        @actionExecuted="$emit('actionExecuted')"
+        @actionExecuted="$parent.$emit('actionExecuted')"
     />
 </template>
 
